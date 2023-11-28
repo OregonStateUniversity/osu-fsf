@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "node": "^21.1.0"
+  },
+  "devDependencies": {
+    "supabase": "^1.112.0"
   }
 }

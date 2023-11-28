@@ -1,6 +1,6 @@
 import { Slot, Stack } from "expo-router"
 import { Button, Text, View } from "react-native"
-import TWButton from "../components/TWButton"
+import TWButton from "../components/Leaderboard"
 import Pedometer from '../components/Pedometer';
 
 export default function Index() {
