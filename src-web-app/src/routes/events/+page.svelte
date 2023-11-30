@@ -1,6 +1,6 @@
 <script lang="ts">
   import { goto } from '$app/navigation';
-
+  import Layout from '../banner-layout.svelte'
   export let data;
   let { supabase } = data;
   $: ({ supabase } = data);
@@ -15,11 +15,9 @@
   <title>Events | DamFit</title>
 </svelte:head>
 
-<!-- Container -->
-<div class="flex flex-col justify-center h-full max-w-md mx-auto">
-  <h1>Welcome to SvelteKit</h1>
-  <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<Layout>
+
+  <p class="flex justify-center">This is the events page</p>
+  <button class="rounded border bg-orange-300 flex flex-col justify-center max-w-md mx-auto" on:click={() => handleSignOut()}>Logout</button>
   
-  <p>This is the events page</p>
-  <button class="rounded border bg-orange-300 px-2" on:click={() => handleSignOut()}>Logout</button>
-</div>
+</Layout>
